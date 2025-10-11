@@ -109,7 +109,7 @@ body {
 .btn-cyan:hover {
     background-color: var(--secondary-cyan);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(130, 192, 207, 0.4);
+    box-shadow: 0 5px 20px rgba(77, 208, 225, 0.5);
     color: var(--text-white);
 }
 
@@ -146,7 +146,7 @@ body {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 80px;
-    background: linear-gradient(135deg, #4da6b8 0%, #82C0CF 100%);
+    background: linear-gradient(135deg, #26C6DA 0%, #4DD0E1 50%, #80DEEA 100%);
 }
 
 .about-card {
@@ -187,7 +187,7 @@ body {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 80px;
-    background: linear-gradient(135deg, #3d96a8 0%, #5db3c4 100%);
+    background: linear-gradient(135deg, #00ACC1 0%, #26C6DA 50%, #4DD0E1 100%);
 }
 
 .projects-section-cyan .section-title {
@@ -285,21 +285,102 @@ body {
     border-color: #555555;
 }
 
-/* Contact Section - Brighter Cyan Background */
+/* Contact Section - Redesigned Layout */
 .contact-section {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 80px;
-    background: linear-gradient(135deg, #4da6b8 0%, #82C0CF 100%);
+    background: linear-gradient(135deg, #26C6DA 0%, #4DD0E1 50%, #80DEEA 100%);
 }
 
+.contact-title-main {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-white);
+    margin-bottom: 2rem;
+}
+
+/* Contact Info Outside Card */
+.contact-info-outside {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-info-outside p {
+    font-size: 1.1rem;
+    color: var(--text-white);
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-outside strong {
+    font-weight: 600;
+}
+
+/* Contact Card */
 .contact-card {
     background-color: var(--dark-card);
     border-radius: 25px;
     padding: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0;
 }
 
+/* Character Image - Aligned with Email Field */
+.contact-character-image {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-character-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact Form */
+.contact-form-new .form-label {
+    color: var(--primary-cyan);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.contact-form-new .form-control {
+    background-color: #2a2a3e;
+    border: none;
+    color: #cccccc;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.contact-form-new .form-control::placeholder {
+    color: #888888;
+}
+
+.contact-form-new .form-control:focus {
+    background-color: #2a2a3e;
+    color: #cccccc;
+    box-shadow: 0 0 0 0.25rem rgba(77, 208, 225, 0.25);
+}
+
+.contact-form-new textarea {
+    resize: none;
+}
+
+/* Social Buttons Outside - Aligned with Send Button */
+.social-buttons-outside {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.contact-link {
+    color: var(--primary-cyan);
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: var(--secondary-cyan);
+    text-decoration: underline;
+}
+
+/* Old contact styles - Keep for backwards compatibility */
 .contact-title {
     font-size: 2.5rem;
     font-weight: 900;
@@ -334,17 +415,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.contact-link {
-    color: var(--primary-cyan);
-    text-decoration: none;
-    word-break: break-all;
-}
-
-.contact-link:hover {
-    color: var(--secondary-cyan);
-    text-decoration: underline;
-}
-
 .contact-right {
     padding: 2rem;
 }
@@ -370,7 +440,7 @@ body {
 .contact-form .form-control:focus {
     background-color: #2a2a3e;
     color: #cccccc;
-    box-shadow: 0 0 0 0.25rem rgba(130, 192, 207, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(77, 208, 225, 0.25);
 }
 
 .contact-form textarea {
