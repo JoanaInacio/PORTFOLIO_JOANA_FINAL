@@ -316,23 +316,25 @@ body {
     font-weight: 600;
 }
 
-/* Contact Card */
+/* Contact Card - Adjusted for Perfect Balance */
 .contact-card {
     background-color: var(--dark-card);
     border-radius: 25px;
-    padding: 3rem;
+    padding: 3rem 2.5rem;
     margin-bottom: 0;
     position: relative;
 }
 
 /* Character Image - Centered and Bigger */
 .contact-character-image {
-    max-width: 500px;
+    max-width: 450px;
     width: 100%;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
     padding-top: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .contact-character-image img {
@@ -340,11 +342,13 @@ body {
     height: auto;
 }
 
-/* Contact Form */
+/* Contact Form - Balanced Padding */
 .contact-form-new {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .contact-form-new .form-label {
@@ -377,13 +381,19 @@ body {
     flex-grow: 1;
 }
 
-/* Social Buttons Inside Card - At Same Height as Send Button */
+/* Social Buttons Inside Card - Perfectly Centered Under Lady's Feet */
 .social-buttons-inside {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-top: auto;
-    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.social-buttons-inside .btn-social {
+    flex: 1;
+    max-width: 180px;
 }
 
 .contact-link {
