@@ -141,6 +141,102 @@ body {
     opacity: 0.8;
 }
 
+/* Skills & Certifications Section (Homepage) */
+.skills-section {
+    min-height: 80vh;
+    padding: 80px 0;
+    background-color: var(--dark-bg);
+    display: flex;
+    align-items: center;
+}
+
+.section-title-home {
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-white);
+    margin-bottom: 3rem;
+}
+
+.skills-category {
+    margin-bottom: 3rem;
+}
+
+.skills-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-cyan);
+    margin-bottom: 2rem;
+}
+
+/* Technology Badges */
+.skills-badges-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skill-badge-home {
+    background-color: var(--primary-cyan);
+    color: var(--text-white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.skill-badge-home:hover {
+    transform: translateY(-3px);
+}
+
+.skill-badge-home.dark {
+    background-color: var(--cyan-dark);
+}
+
+.skill-badge-home.light {
+    background-color: var(--cyan-light);
+    color: var(--dark-card);
+}
+
+/* Certification Badges */
+.certifications-badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cert-badge-home {
+    background: linear-gradient(135deg, var(--dark-card) 0%, #0f1419 100%);
+    border: 2px solid var(--primary-cyan);
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.cert-badge-home:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(77, 208, 225, 0.3);
+    border-color: var(--secondary-cyan);
+}
+
+.cert-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-cyan);
+}
+
+.cert-desc {
+    font-size: 0.95rem;
+    color: var(--gray-text);
+}
+
 /* About Section - Brighter Cyan Background */
 .about-section-cyan {
     min-height: 100vh;
@@ -512,6 +608,8 @@ body {
     background-color: var(--cyan-light);
     color: var(--dark-card);
 }
+
+/* Social Buttons */
 .btn-social {
     display: inline-flex;
     align-items: center;
