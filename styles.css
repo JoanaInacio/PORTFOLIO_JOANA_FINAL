@@ -1,11 +1,20 @@
-/* Global Styles */
+/* Global Styles - Updated Color Palette */
 :root {
-    --cyan: #0ABAB5; /* True Tiffany Blue */
-    --cyan-hover: #81D8D0; /* Lighter Tiffany for hovers */
+    /* Primary colors extracted from character illustration */
+    --primary-cyan: #82C0CF;        /* Light blue from pants - main accent */
+    --secondary-cyan: #6B9BAB;      /* Darker blue from sleeves - hover/secondary */
+    --cyan-dark: #5B8B9A;           /* Even darker for gradients */
+    
+    /* Background colors */
     --dark-bg: #000000;
     --dark-card: #1a1a2e;
+    --light-bg: #ffffff;
+    --light-card: #f8f9fa;
+    
+    /* Text colors */
     --text-white: #ffffff;
-    --gray-text: #a8a8a8;
+    --text-dark: #1a1a2e;
+    --gray-text: #6c757d;
 }
 
 * {
@@ -16,12 +25,12 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--dark-bg);
-    color: var(--text-white);
+    background-color: var(--light-bg);
+    color: var(--text-dark);
     line-height: 1.6;
 }
 
-/* Navigation */
+/* Navigation - Keep Dark */
 .navbar {
     background-color: var(--dark-bg);
     padding: 1.5rem 0;
@@ -42,21 +51,22 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--cyan) !important;
+    color: var(--primary-cyan) !important;
 }
 
-/* Intro Section (Homepage) */
+/* Intro Section (Homepage) - Light Background */
 .intro-section {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 100px;
+    background-color: var(--light-bg);
 }
 
 .intro-text {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
-    color: var(--text-white);
+    color: var(--text-dark);
 }
 
 .intro-title {
@@ -64,11 +74,11 @@ body {
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 1rem;
-    color: var(--text-white);
+    color: var(--text-dark);
 }
 
 .highlight {
-    color: var(--cyan);
+    color: var(--primary-cyan);
 }
 
 .intro-subtitle {
@@ -85,8 +95,8 @@ body {
 }
 
 .btn-cyan {
-    background-color: var(--cyan);
-    color: var(--dark-bg);
+    background-color: var(--primary-cyan);
+    color: var(--text-white);
     padding: 12px 30px;
     border-radius: 25px;
     border: none;
@@ -96,26 +106,26 @@ body {
 }
 
 .btn-cyan:hover {
-    background-color: var(--cyan-hover);
+    background-color: var(--secondary-cyan);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(10, 186, 181, 0.3);
-    color: var(--dark-bg);
+    box-shadow: 0 5px 15px rgba(130, 192, 207, 0.4);
+    color: var(--text-white);
 }
 
 .btn-cyan-outline {
     background-color: transparent;
-    color: var(--cyan);
+    color: var(--primary-cyan);
     padding: 12px 30px;
     border-radius: 25px;
-    border: 2px solid var(--cyan);
+    border: 2px solid var(--primary-cyan);
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .btn-cyan-outline:hover {
-    background-color: var(--cyan);
-    color: var(--dark-bg);
+    background-color: var(--primary-cyan);
+    color: var(--text-white);
     transform: translateY(-2px);
 }
 
@@ -127,68 +137,61 @@ body {
     max-width: 100%;
     border-radius: 50%;
     padding: 20px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-/* About Section with Teal Background */
+/* About Section - Light Background with Gradient Accent */
 .about-section-cyan {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 80px;
-    background: linear-gradient(135deg, #3d6d78 0%, #5B9FAD 100%);
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e8f4f8 100%);
 }
 
 .about-card {
-    background-color: #1a1a2e;
+    background-color: var(--light-bg);
     border-radius: 25px;
     padding: 3rem;
     max-width: 1000px;
     margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
     font-size: 3.5rem;
     font-weight: 900;
     margin-bottom: 3rem;
-    color: var(--text-white);
+    color: var(--text-dark);
 }
 
 .about-content {
-    color: var(--text-white);
+    color: var(--text-dark);
 }
 
 .about-content p {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: var(--text-white);
+    color: var(--text-dark);
 }
 
-/* Keywords styling - General Tiffany Blue */
+/* Keywords styling - Now with excellent contrast */
 .keyword {
-    color: var(--cyan);
+    color: var(--secondary-cyan);
     font-weight: 700;
     font-size: 1.15rem;
 }
 
-/* Special AI styling - ONLY for the first AI mention */
-.ai-special {
-    color: var(--cyan);
-    font-weight: 900;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-}
-
-/* Projects Section with Cyan Background */
+/* Projects Section - Light Background */
 .projects-section-cyan {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 80px;
-    background: linear-gradient(135deg, #006666 0%, #00a3a3 100%);
+    background: linear-gradient(135deg, #e8f4f8 0%, var(--light-bg) 100%);
 }
 
 .projects-section-cyan .section-title {
-    color: var(--text-white);
+    color: var(--text-dark);
 }
 
 .filter-buttons {
@@ -196,35 +199,39 @@ body {
 }
 
 .btn-filter {
-    background-color: #1a1a2e;
-    color: var(--text-white);
-    border: 2px solid var(--cyan);
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    border: 2px solid var(--primary-cyan);
     border-radius: 25px;
     padding: 10px 25px;
     margin: 0 5px;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .btn-filter:hover,
 .btn-filter.active {
-    background-color: var(--cyan);
-    color: var(--dark-bg);
+    background-color: var(--primary-cyan);
+    color: var(--text-white);
+    transform: translateY(-2px);
 }
 
-/* Bootstrap Project Cards */
+/* Bootstrap Project Cards - Light with Shadow */
 .project-bootstrap-card {
-    background-color: #1a1a2e;
-    border: none;
+    background-color: var(--light-bg);
+    border: 1px solid #e0e0e0;
     border-radius: 15px;
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .project-bootstrap-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(130, 192, 207, 0.3);
 }
 
 .project-bootstrap-card .card-img-top {
@@ -240,14 +247,14 @@ body {
 }
 
 .project-bootstrap-card .card-title {
-    color: var(--cyan);
+    color: var(--secondary-cyan);
     font-weight: 700;
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
 }
 
 .project-bootstrap-card .card-text {
-    color: var(--text-white);
+    color: var(--text-dark);
     margin-bottom: 1rem;
     flex-grow: 1;
 }
@@ -256,20 +263,20 @@ body {
     margin-top: auto;
 }
 
-/* Coming Soon Placeholder Image Area */
+/* Coming Soon Placeholder - Updated Colors */
 .coming-soon-placeholder {
     height: 250px;
-    background: linear-gradient(135deg, #001a1a 0%, #003333 100%);
+    background: linear-gradient(135deg, #d4e9ee 0%, #a8d5e2 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 2px solid var(--cyan);
+    border-bottom: 3px solid var(--primary-cyan);
 }
 
 .coming-soon-text {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--cyan);
+    color: var(--secondary-cyan);
     letter-spacing: 3px;
 }
 
@@ -278,133 +285,25 @@ body {
     opacity: 0.5;
     cursor: not-allowed;
     pointer-events: none;
-    background-color: #555555;
-    border-color: #555555;
+    background-color: #cccccc;
+    border-color: #cccccc;
+    color: #666666;
 }
 
-/* Contact Section */
+/* Contact Section - Light Background */
 .contact-section {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 80px;
-    background: linear-gradient(135deg, #3d6d78 0%, #5B9FAD 100%);
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e8f4f8 100%);
 }
 
 .contact-card {
-    background-color: var(--dark-card);
+    background-color: var(--light-bg);
     border-radius: 25px;
     padding: 3rem;
     margin-bottom: 3rem;
-}
-
-.contact-title {
-    font-size: 2.5rem;
-    font-weight: 900;
-    margin-bottom: 2rem;
-    color: var(--text-white);
-}
-
-.contact-title-large {
-    font-size: 3rem;
-    font-weight: 900;
-    color: var(--text-white);
-    margin-bottom: 2rem;
-}
-
-.contact-left {
-    padding: 2rem;
-}
-
-.contact-info p {
-    margin-bottom: 1rem;
-    color: var(--text-white);
-}
-
-.contact-link {
-    color: var(--cyan);
-    text-decoration: none;
-    word-break: break-all;
-}
-
-.contact-link:hover {
-    text-decoration: underline;
-}
-
-.contact-right {
-    padding: 2rem;
-}
-
-.contact-form .form-label {
-    color: var(--cyan);
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-}
-
-.contact-form .form-control {
-    background-color: #2a2a3e;
-    border: none;
-    color: #cccccc;
-    padding: 12px;
-    border-radius: 10px;
-}
-
-.contact-form .form-control::placeholder {
-    color: #888888;
-}
-
-.contact-form .form-control:focus {
-    background-color: #2a2a3e;
-    color: #cccccc;
-    box-shadow: 0 0 0 0.25rem rgba(10, 186, 181, 0.25);
-}
-
-.contact-form textarea {
-    resize: none;
-}
-
-/* Contact Page Image Layout */
-.contact-illustration-final {
-    position: relative;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact-illustration-final img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.contact-info-overlay {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(26, 26, 46, 0.95);
-    padding: 1.5rem;
-    border-radius: 15px;
-    border: 2px solid var(--cyan);
-}
-
-.contact-info-overlay p {
-    margin-bottom: 0.5rem;
-    color: var(--text-white);
-    font-size: 0.9rem;
-}
-
-.contact-info-overlay strong {
-    color: var(--cyan);
-}
-
-.social-buttons-final {
-    display: flex;
-    gap: 10px;
-    margin-top: 1rem;
-}
-
-.social-buttons-final .btn-social {
-    font-size: 0.85rem;
-    padding: 8px 16px;
-}
+    box-shadow: 0 10px 30px rgba(0
 
 /* Social Buttons */
 .btn-social {
@@ -419,7 +318,13 @@ body {
     fill: currentColor;
 }
 
-/* Footer */
+.social-buttons-final {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* Footer - Keep Dark */
 .footer-section {
     background-color: var(--dark-bg);
     padding: 2rem 0;
@@ -427,7 +332,7 @@ body {
 }
 
 .footer-text {
-    color: var(--gray-text);
+    color: var(--text-white);
     margin: 0;
 }
 
@@ -438,6 +343,10 @@ body {
     }
     
     .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .contact-title-large {
         font-size: 2.5rem;
     }
     
@@ -457,11 +366,6 @@ body {
         text-align: center;
         width: 100%;
         max-width: 300px;
-    }
-
-    .contact-info-overlay {
-        position: static;
-        margin-top: 2rem;
     }
 }
 
@@ -493,8 +397,19 @@ body {
         margin-bottom: 10px;
     }
     
-    .about-card,
-    .contact-card {
+    .contact-info-overlay {
         padding: 1.5rem;
+    }
+    
+    .about-card {
+        padding: 1.5rem;
+    }
+    
+    .social-buttons-final {
+        flex-direction: column;
+    }
+    
+    .social-buttons-final .btn-social {
+        width: 100%;
     }
 }
