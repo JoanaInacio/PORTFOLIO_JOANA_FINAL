@@ -286,7 +286,7 @@ body {
     min-height: 100vh;
     padding-top: 120px;
     padding-bottom: 80px;
-    background: linear-gradient(135deg, #00ACC1 0%, #26C6DA 50%, #4DD0E1 100%);
+    background: linear-gradient(135deg, #26C6DA 0%, #4DD0E1 50%, #80DEEA 100%);
 }
 
 .projects-section-cyan .section-title {
