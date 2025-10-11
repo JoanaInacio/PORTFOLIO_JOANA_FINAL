@@ -1,20 +1,21 @@
-/* Global Styles - Updated Color Palette */
+/* Global Styles - Brighter Professional Color Palette */
 :root {
-    /* Primary colors extracted from character illustration */
-    --primary-cyan: #82C0CF;        /* Light blue from pants - main accent */
-    --secondary-cyan: #6B9BAB;      /* Darker blue from sleeves - hover/secondary */
-    --cyan-dark: #5B8B9A;           /* Even darker for gradients */
+    /* Primary colors - Brighter and more vibrant */
+    --primary-cyan: #4DD0E1;        /* Bright cyan - main accent (Material Design inspired) */
+    --secondary-cyan: #26C6DA;      /* Vibrant cyan - hover/active states */
+    --cyan-light: #80DEEA;          /* Lighter cyan for backgrounds */
+    --cyan-dark: #00ACC1;           /* Darker cyan for contrast */
     
     /* Background colors */
-    --dark-bg: #000000;
-    --dark-card: #1a1a2e;
+    --dark-bg: #0a1929;             /* Dark blue-gray instead of pure black */
+    --dark-card: #1e2a3a;           /* Slightly lighter card background */
     --light-bg: #ffffff;
     --light-card: #f8f9fa;
     
     /* Text colors */
     --text-white: #ffffff;
     --text-dark: #1a1a2e;
-    --gray-text: #6c757d;
+    --gray-text: #94a3b8;           /* Lighter gray for better readability */
 }
 
 * {
