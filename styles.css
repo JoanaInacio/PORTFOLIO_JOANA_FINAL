@@ -61,7 +61,7 @@ body {
     display: flex;
     align-items: center;
     padding-top: 100px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     background-color: var(--dark-bg);
 }
 
@@ -147,11 +147,9 @@ body {
 
 /* Skills & Certifications Section (Homepage) */
 .skills-section {
-    min-height: 80vh;
-    padding: 80px 0;
+    min-height: auto;
+    padding: 60px 0 80px 0;
     background-color: var(--dark-bg);
-    display: flex;
-    align-items: center;
 }
 
 .section-title-home {
