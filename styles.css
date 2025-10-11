@@ -55,12 +55,13 @@ body {
     color: var(--primary-cyan) !important;
 }
 
-/* Intro Section (Homepage) - Keep Dark */
+/* Intro Section (Homepage) - Reduced Height */
 .intro-section {
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     padding-top: 100px;
+    padding-bottom: 40px;
     background-color: var(--dark-bg);
 }
 
@@ -657,11 +658,19 @@ body {
         font-size: 2.5rem;
     }
     
+    .section-title-home {
+        font-size: 2.5rem;
+    }
+    
     .intro-section,
     .about-section-cyan,
     .projects-section-cyan,
     .contact-section {
         padding-top: 100px;
+    }
+    
+    .skills-section {
+        padding: 60px 0;
     }
     
     .cta-buttons {
@@ -673,6 +682,10 @@ body {
         text-align: center;
         width: 100%;
         max-width: 300px;
+    }
+    
+    .certifications-badges {
+        grid-template-columns: 1fr;
     }
 }
 
