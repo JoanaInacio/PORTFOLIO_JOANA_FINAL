@@ -485,10 +485,37 @@ body {
     height: auto;
 }
 
-/* Social Buttons */
+/* Tech Badges/Chips */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.tech-badge {
+    background-color: var(--primary-cyan);
+    color: var(--text-white);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.tech-badge.dark {
+    background-color: var(--cyan-dark);
+}
+
+.tech-badge.light {
+    background-color: var(--cyan-light);
+    color: var(--dark-card);
+}
 .btn-social {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     padding: 10px 20px;
     font-size: 0.95rem;
