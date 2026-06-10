@@ -1,21 +1,21 @@
-/* Global Styles - Brighter Professional Color Palette */
+
 :root {
-    /* Primary colors - Brighter and more vibrant */
-    --primary-cyan: #4DD0E1;        /* Bright cyan - main accent (Material Design inspired) */
-    --secondary-cyan: #26C6DA;      /* Vibrant cyan - hover/active states */
-    --cyan-light: #80DEEA;          /* Lighter cyan for backgrounds */
-    --cyan-dark: #00ACC1;           /* Darker cyan for contrast */
+   
+    --primary-cyan: #4DD0E1;      
+    --secondary-cyan: #26C6DA;      
+    --cyan-light: #80DEEA;         
+    --cyan-dark: #00ACC1;           
 
     /* Background colors */
-    --dark-bg: #0a1929;             /* Dark blue-gray instead of pure black */
-    --dark-card: #1e2a3a;           /* Slightly lighter card background */
+    --dark-bg: #0a1929;             
+    --dark-card: #1e2a3a;           
     --light-bg: #ffffff;
     --light-card: #f8f9fa;
 
     /* Text colors */
     --text-white: #ffffff;
     --text-dark: #1a1a2e;
-    --gray-text: #94a3b8;           /* Lighter gray for better readability */
+    --gray-text: #94a3b8;          
 
     /* Status colors (for certification table) */
     --status-progress: #ffb74d;
@@ -43,7 +43,6 @@ button:focus-visible,
     outline-offset: 2px;
 }
 
-/* Navigation - Keep Dark */
 .navbar {
     background-color: var(--dark-bg);
     padding: 1.5rem 0;
@@ -67,7 +66,7 @@ button:focus-visible,
     color: var(--primary-cyan) !important;
 }
 
-/* Intro Section (Homepage) - Reduced Height */
+/* Intro Section (Homepage) */
 .intro-section {
     min-height: 70vh;
     display: flex;
@@ -216,19 +215,19 @@ button:focus-visible,
 }
 
 /* ============================================= */
-/* Certification Table (HTML TABLE requirement)  */
+/* Certification Table (HTML TABLE)  */
 /* ============================================= */
 .cert-table-wrapper {
     max-width: 900px;
     margin: 0 auto;
-    overflow-x: auto;            /* responsive: lets the table scroll on small screens */
+    overflow-x: auto;            
     border-radius: 15px;
     border: 2px solid var(--primary-cyan);
 }
 
 .cert-table {
     width: 100%;
-    min-width: 600px;            /* keeps columns readable; wrapper scrolls if narrower */
+    min-width: 600px;            
     border-collapse: collapse;
     background: var(--dark-card);
     color: var(--text-white);
@@ -303,7 +302,6 @@ button:focus-visible,
     color: var(--text-white);
 }
 
-/* Legacy certification badge grid (kept for backwards compatibility) */
 .certifications-badges {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -340,7 +338,7 @@ button:focus-visible,
     color: var(--gray-text);
 }
 
-/* About Section - Brighter Cyan Background */
+
 .about-section-cyan {
     min-height: 100vh;
     padding-top: 120px;
@@ -381,7 +379,7 @@ button:focus-visible,
     font-size: 1.15rem;
 }
 
-/* Projects Section - Brighter Cyan Background */
+
 .projects-section-cyan {
     min-height: 100vh;
     padding-top: 120px;
@@ -492,7 +490,7 @@ button:focus-visible,
 }
 
 /* ============================================= */
-/* Embedded Live Project (EMBEDS requirement)    */
+/* Embedded Live Project (EMBEDS)    */
 /* ============================================= */
 .embed-section {
     max-width: 960px;
@@ -504,11 +502,10 @@ button:focus-visible,
     font-size: 1.1rem;
 }
 
-/* Responsive 16:9 iframe wrapper */
 .embed-wrapper {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%;       /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;       
     height: 0;
     overflow: hidden;
     border-radius: 15px;
@@ -526,7 +523,6 @@ button:focus-visible,
     border: 0;
 }
 
-/* Contact Section - Redesigned Layout */
 .contact-section {
     min-height: 100vh;
     padding-top: 120px;
@@ -541,7 +537,6 @@ button:focus-visible,
     margin-bottom: 2rem;
 }
 
-/* Contact Info Outside Card */
 .contact-info-outside {
     text-align: center;
     margin-bottom: 2rem;
@@ -557,7 +552,6 @@ button:focus-visible,
     font-weight: 600;
 }
 
-/* Contact Card - Adjusted for Perfect Balance */
 .contact-card {
     background-color: var(--dark-card);
     border-radius: 25px;
@@ -566,7 +560,6 @@ button:focus-visible,
     position: relative;
 }
 
-/* Character Image - Centered and Bigger */
 .contact-character-image {
     max-width: 450px;
     width: 100%;
@@ -583,7 +576,6 @@ button:focus-visible,
     height: auto;
 }
 
-/* Contact Form - Balanced Padding */
 .contact-form-new {
     display: flex;
     flex-direction: column;
@@ -622,7 +614,6 @@ button:focus-visible,
     flex-grow: 1;
 }
 
-/* Social Buttons Inside Card - Perfectly Centered Under Lady's Feet */
 .social-buttons-inside {
     display: flex;
     gap: 1rem;
@@ -647,7 +638,6 @@ button:focus-visible,
     text-decoration: underline;
 }
 
-/* Old contact styles - Keep for backwards compatibility */
 .contact-title {
     font-size: 2.5rem;
     font-weight: 900;
@@ -754,7 +744,6 @@ button:focus-visible,
     color: var(--dark-card);
 }
 
-/* Social Buttons */
 .btn-social {
     display: inline-flex;
     align-items: center;
@@ -780,7 +769,6 @@ button:focus-visible,
     flex-wrap: wrap;
 }
 
-/* Footer - Keep Dark */
 .footer-section {
     background-color: var(--dark-bg);
     padding: 2rem 0;
